@@ -1,0 +1,3404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="theme-color" content="#2D1B4E" />
+<meta name="description" content="VL Luxe Imperial Recovery — Recuperación post-quirúrgica premium a domicilio en NYC." />
+<title>VL Luxe Imperial Recovery</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter+Tight:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ================================
+   VL LUXE IMPERIAL — DESIGN SYSTEM v2
+   Paleta morado profundo + dorado champaña + crema
+   ================================ */
+
+:root {
+  /* Brand colors (matching web oficial) */
+  --purple-deep: #2D1B4E;
+  --purple-dark: #1F1338;
+  --purple-medium: #3D2A66;
+  --purple-light: #4A3578;
+  --purple-glow: rgba(74, 53, 120, 0.15);
+  
+  --gold: #C8A57B;
+  --gold-light: #D9BB91;
+  --gold-deep: #A88858;
+  --gold-glow: rgba(200, 165, 123, 0.15);
+  
+  --cream: #F5EFE6;
+  --cream-soft: #EBE3D5;
+  --cream-warm: #FAF5EC;
+  
+  --black-soft: #1A1228;
+  --text-dark: #2D1B4E;
+  --text-muted: #8B7B9A;
+  --line: rgba(200, 165, 123, 0.2);
+  --line-strong: rgba(200, 165, 123, 0.4);
+  
+  /* Type */
+  --font-display: 'Cormorant Garamond', 'Times New Roman', serif;
+  --font-body: 'Inter Tight', -apple-system, sans-serif;
+
+  /* Sizes */
+  --container: 480px;
+  --radius: 6px;
+  --radius-lg: 12px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+html, body {
+  background: var(--cream-warm);
+  color: var(--text-dark);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: none;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* =====================
+   APP CONTAINER
+   ===================== */
+.app {
+  max-width: var(--container);
+  margin: 0 auto;
+  min-height: 100vh;
+  position: relative;
+  background: var(--cream-warm);
+  padding-bottom: 100px;
+}
+
+/* =====================
+   TOP BAR (matcheando web)
+   ===================== */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(245, 239, 230, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--line);
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-logo {
+  width: 36px;
+  height: 36px;
+  background: var(--purple-deep);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  border: 1px solid var(--gold);
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.brand-name {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--purple-deep);
+  letter-spacing: 0.02em;
+}
+
+.brand-sub {
+  font-size: 9px;
+  letter-spacing: 0.25em;
+  color: var(--gold-deep);
+  text-transform: uppercase;
+  margin-top: 2px;
+  font-weight: 500;
+}
+
+.mode-badge {
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  padding: 5px 10px;
+  border: 1px solid var(--gold);
+  border-radius: 20px;
+  background: var(--gold-glow);
+  font-weight: 600;
+}
+
+/* =====================
+   HERO (matcheando web)
+   ===================== */
+.hero {
+  background: 
+    linear-gradient(135deg, rgba(45, 27, 78, 0.85), rgba(31, 19, 56, 0.95)),
+    radial-gradient(ellipse at center, rgba(200, 165, 123, 0.1) 0%, transparent 60%),
+    var(--purple-deep);
+  padding: 56px 24px 60px;
+  text-align: center;
+  color: var(--cream);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0.78 0 0 0 0 0.65 0 0 0 0 0.48 0 0 0 0.04 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 16px;
+  background: rgba(200, 165, 123, 0.15);
+  border: 1px solid rgba(200, 165, 123, 0.4);
+  border-radius: 30px;
+  color: var(--gold-light);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  font-weight: 500;
+  position: relative;
+}
+
+.hero-badge::before {
+  content: '✦';
+  font-size: 11px;
+  color: var(--gold);
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--cream);
+  margin-bottom: 14px;
+  letter-spacing: -0.005em;
+  position: relative;
+}
+
+.hero-subtitle {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--gold);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.hero-tagline {
+  color: var(--cream-soft);
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 28px;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+/* =====================
+   BUTTONS
+   ===================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 22px;
+  font-family: var(--font-body);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: var(--gold);
+  color: var(--purple-deep);
+}
+
+.btn-primary:active {
+  background: var(--gold-deep);
+  transform: scale(0.98);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--cream);
+  border: 1px solid rgba(245, 239, 230, 0.5);
+}
+
+.btn-secondary:active {
+  background: rgba(245, 239, 230, 0.1);
+  transform: scale(0.98);
+}
+
+.btn-purple {
+  background: var(--purple-deep);
+  color: var(--cream);
+  border: 1px solid var(--purple-deep);
+}
+
+.btn-purple:active {
+  background: var(--purple-dark);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--purple-deep);
+  border: 1px solid var(--purple-deep);
+}
+
+.btn-outline:active {
+  background: var(--purple-glow);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+/* =====================
+   SECTION
+   ===================== */
+.section {
+  padding: 36px 24px;
+}
+
+.section-cream {
+  background: var(--cream-warm);
+}
+
+.section-purple {
+  background: var(--purple-deep);
+  color: var(--cream);
+}
+
+.section-purple-light {
+  background: linear-gradient(180deg, var(--cream-warm), var(--cream));
+}
+
+.section-head {
+  margin-bottom: 24px;
+}
+
+.section-overline {
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  color: var(--gold-deep);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.section-purple .section-overline {
+  color: var(--gold);
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--purple-deep);
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+
+.section-purple .section-title {
+  color: var(--cream);
+}
+
+.section-title em {
+  font-style: italic;
+  color: var(--gold-deep);
+  font-weight: 400;
+}
+
+.section-purple .section-title em {
+  color: var(--gold);
+}
+
+.section-sub {
+  margin-top: 10px;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.section-purple .section-sub {
+  color: var(--cream-soft);
+}
+
+/* =====================
+   SERVICES (matcheando web)
+   ===================== */
+.services-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.service-card {
+  background: var(--cream-warm);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--gold);
+  border-radius: var(--radius-lg);
+  padding: 24px 22px;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 12px rgba(45, 27, 78, 0.08);
+}
+
+.service-card:active {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(45, 27, 78, 0.15);
+}
+
+.service-card h3 {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--purple-deep);
+  margin-bottom: 10px;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.service-card p {
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.service-icon {
+  width: 44px;
+  height: 44px;
+  background: var(--purple-glow);
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold-deep);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+/* =====================
+   PACKAGES
+   ===================== */
+.packages {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.package {
+  background: var(--cream-warm);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 26px 22px;
+  position: relative;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.package.featured {
+  background: var(--purple-deep);
+  color: var(--cream);
+  border: 1px solid var(--gold);
+  box-shadow: 0 8px 30px rgba(45, 27, 78, 0.25);
+}
+
+.package.value {
+  background: linear-gradient(180deg, var(--purple-medium), var(--purple-deep));
+  color: var(--cream);
+  border: 1px solid var(--gold);
+}
+
+.package-badge {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--gold);
+  color: var(--purple-deep);
+  font-size: 9px;
+  letter-spacing: 0.25em;
+  padding: 5px 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.package-name {
+  font-family: var(--font-display);
+  font-size: 24px;
+  color: var(--purple-deep);
+  margin-bottom: 6px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.package.featured .package-name,
+.package.value .package-name {
+  color: var(--cream);
+}
+
+.package-sessions {
+  font-size: 11px;
+  color: var(--gold-deep);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+.package.featured .package-sessions,
+.package.value .package-sessions {
+  color: var(--gold);
+}
+
+.package-price {
+  font-family: var(--font-display);
+  font-size: 52px;
+  font-weight: 400;
+  color: var(--purple-deep);
+  line-height: 1;
+  margin-bottom: 6px;
+  letter-spacing: -0.02em;
+}
+
+.package.featured .package-price,
+.package.value .package-price {
+  color: var(--gold);
+}
+
+.package-price .currency {
+  font-size: 24px;
+  vertical-align: top;
+  margin-right: 2px;
+  font-weight: 300;
+}
+
+.package-per-session {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  font-style: italic;
+  font-family: var(--font-display);
+}
+
+.package.featured .package-per-session,
+.package.value .package-per-session {
+  color: var(--cream-soft);
+}
+
+.package-description {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.package.featured .package-description,
+.package.value .package-description {
+  color: var(--cream-soft);
+  border-top-color: rgba(200, 165, 123, 0.3);
+}
+
+/* =====================
+   REVIEWS SECTION (NUEVA)
+   ===================== */
+.reviews-section {
+  background: linear-gradient(180deg, var(--cream-warm), var(--cream));
+  padding: 40px 24px;
+}
+
+.reviews-summary {
+  text-align: center;
+  margin-bottom: 28px;
+  padding: 24px 20px;
+  background: var(--cream-warm);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 4px 16px rgba(45, 27, 78, 0.06);
+}
+
+.reviews-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.reviews-stars {
+  color: var(--gold);
+  font-size: 24px;
+  letter-spacing: 0.05em;
+}
+
+.reviews-rating-num {
+  font-family: var(--font-display);
+  font-size: 28px;
+  color: var(--purple-deep);
+  font-weight: 600;
+}
+
+.reviews-count {
+  font-size: 12px;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+.reviews-count strong {
+  color: var(--purple-deep);
+  font-weight: 600;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.review-card {
+  background: var(--cream-warm);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 22px 20px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(45, 27, 78, 0.05);
+}
+
+.review-quote-mark {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font-family: var(--font-display);
+  font-size: 56px;
+  color: var(--gold);
+  opacity: 0.25;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.review-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--purple-deep);
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.review-meta-block {
+  flex: 1;
+}
+
+.review-name {
+  font-weight: 600;
+  color: var(--purple-deep);
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.review-stars-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.review-stars {
+  color: var(--gold);
+  font-size: 13px;
+  letter-spacing: 0.05em;
+}
+
+.review-date {
+  color: var(--text-muted);
+  font-size: 11px;
+}
+
+.review-quote {
+  color: var(--text-dark);
+  font-size: 13px;
+  line-height: 1.7;
+  font-style: italic;
+  font-family: var(--font-display);
+  font-weight: 400;
+  position: relative;
+  padding-left: 12px;
+  border-left: 2px solid var(--gold);
+}
+
+.review-link {
+  display: block;
+  text-align: center;
+  margin-top: 22px;
+  color: var(--purple-deep);
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 12px;
+  border: 1px solid var(--purple-deep);
+  border-radius: 30px;
+}
+
+/* =====================
+   CONTACT BAR
+   ===================== */
+.contact-bar {
+  background: var(--purple-deep);
+  color: var(--cream);
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.contact-bar h3 {
+  font-family: var(--font-display);
+  font-size: 26px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.contact-bar p {
+  color: var(--cream-soft);
+  font-size: 13px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+  padding: 18px;
+  background: rgba(200, 165, 123, 0.08);
+  border: 1px solid rgba(200, 165, 123, 0.25);
+  border-radius: var(--radius-lg);
+  text-align: left;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  color: var(--cream);
+}
+
+.contact-row .icon {
+  width: 28px;
+  height: 28px;
+  background: var(--gold);
+  color: var(--purple-deep);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  flex-shrink: 0;
+  font-weight: 700;
+}
+
+.contact-row .label {
+  color: var(--gold);
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  display: block;
+  font-weight: 600;
+}
+
+.contact-row .value {
+  color: var(--cream);
+  font-weight: 500;
+}
+
+/* =====================
+   ACCESS CARD
+   ===================== */
+.access-section {
+  padding: 32px 24px;
+  background: linear-gradient(180deg, var(--cream), var(--cream-soft));
+}
+
+.access-card {
+  background: var(--cream-warm);
+  border: 1px solid var(--gold);
+  border-radius: var(--radius-lg);
+  padding: 28px 24px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(45, 27, 78, 0.1);
+}
+
+.access-card .ornament {
+  color: var(--gold);
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.access-card h4 {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--purple-deep);
+  margin-bottom: 8px;
+}
+
+.access-card p {
+  color: var(--text-muted);
+  font-size: 12px;
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+
+.access-input {
+  width: 100%;
+  background: var(--cream-warm);
+  border: 1px solid var(--line-strong);
+  color: var(--purple-deep);
+  padding: 14px 16px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  text-align: center;
+  border-radius: var(--radius);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.access-input:focus {
+  outline: none;
+  border-color: var(--gold);
+  background: var(--cream);
+}
+
+.access-hint {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 12px;
+  font-style: italic;
+}
+
+.access-hint strong {
+  color: var(--gold-deep);
+  font-weight: 700;
+}
+
+/* =====================
+   SCREEN SYSTEM
+   ===================== */
+.screen {
+  display: none;
+  animation: fadeIn 0.4s ease;
+}
+
+.screen.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* =====================
+   CLIENT DASHBOARD
+   ===================== */
+.dash-greeting {
+  background: var(--purple-deep);
+  color: var(--cream);
+  padding: 36px 24px 30px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.dash-greeting::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at top, rgba(200, 165, 123, 0.15) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.dash-greeting .ornament {
+  color: var(--gold);
+  font-size: 18px;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.dash-hello {
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  position: relative;
+  font-weight: 600;
+}
+
+.dash-name {
+  font-family: var(--font-display);
+  font-size: 34px;
+  color: var(--cream);
+  font-weight: 500;
+  margin-bottom: 6px;
+  letter-spacing: -0.01em;
+  position: relative;
+}
+
+.dash-day {
+  color: var(--gold-light);
+  font-size: 13px;
+  font-style: italic;
+  font-family: var(--font-display);
+  position: relative;
+}
+
+.progress-section {
+  padding: 28px 24px;
+  background: var(--cream-warm);
+  border-bottom: 1px solid var(--line);
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 14px;
+}
+
+.progress-label-text {
+  font-size: 10px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  font-weight: 600;
+}
+
+.progress-percent {
+  font-family: var(--font-display);
+  font-size: 24px;
+  color: var(--purple-deep);
+  font-weight: 500;
+}
+
+.progress-bar {
+  height: 6px;
+  background: var(--cream-soft);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold-deep), var(--gold), var(--gold-light));
+  border-radius: 3px;
+  transition: width 0.8s ease;
+}
+
+.progress-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 24px 24px 0;
+}
+
+.stat-card {
+  background: var(--cream-warm);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--gold);
+  padding: 18px 16px;
+  border-radius: var(--radius);
+}
+
+.stat-label {
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.stat-value {
+  font-family: var(--font-display);
+  font-size: 22px;
+  color: var(--purple-deep);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.stat-value .small {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* Reminders */
+.reminders-section {
+  padding: 28px 24px;
+}
+
+.reminder {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  background: var(--cream-warm);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.reminder.done {
+  opacity: 0.5;
+  background: var(--cream-soft);
+}
+
+.reminder.done .reminder-text {
+  text-decoration: line-through;
+  color: var(--text-muted);
+}
+
+.reminder-check {
+  width: 22px;
+  height: 22px;
+  border: 1.5px solid var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.25s ease;
+}
+
+.reminder.done .reminder-check {
+  background: var(--gold);
+}
+
+.reminder.done .reminder-check::after {
+  content: '✓';
+  color: var(--purple-deep);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.reminder-text {
+  font-size: 13px;
+  color: var(--purple-deep);
+  line-height: 1.4;
+  flex: 1;
+}
+
+/* Alert */
+.alert-card {
+  background: linear-gradient(180deg, rgba(200, 60, 60, 0.06), transparent);
+  border: 1px solid rgba(200, 60, 60, 0.3);
+  padding: 22px;
+  border-radius: var(--radius-lg);
+  margin: 0 24px 24px;
+}
+
+.alert-card h4 {
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: #B8424B;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.alert-card p {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.alert-list {
+  list-style: none;
+  margin-bottom: 16px;
+}
+
+.alert-list li {
+  padding: 5px 0;
+  padding-left: 14px;
+  font-size: 12px;
+  color: var(--text-dark);
+  position: relative;
+}
+
+.alert-list li::before {
+  content: '◊';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  color: #B8424B;
+}
+
+/* =====================
+   GUIDES
+   ===================== */
+.guides-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0 24px;
+}
+
+.guide-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--cream-warm);
+  border: 1px solid var(--line);
+  padding: 16px 18px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.guide-card:active {
+  background: var(--purple-glow);
+  border-color: var(--gold);
+}
+
+.guide-num {
+  width: 36px;
+  height: 36px;
+  background: var(--purple-deep);
+  color: var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.guide-content {
+  flex: 1;
+}
+
+.guide-content h4 {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--purple-deep);
+  margin-bottom: 2px;
+  line-height: 1.2;
+}
+
+.guide-content p {
+  font-size: 11px;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+.guide-arrow {
+  color: var(--gold-deep);
+  font-size: 18px;
+  font-family: var(--font-display);
+}
+
+/* =====================
+   REFERRAL
+   ===================== */
+.referral-card {
+  margin: 24px;
+  padding: 32px 24px;
+  background: var(--purple-deep);
+  border: 1px solid var(--gold);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  color: var(--cream);
+}
+
+.referral-card::before {
+  content: '';
+  position: absolute;
+  top: -40px; right: -40px;
+  width: 120px; height: 120px;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  opacity: 0.15;
+}
+
+.referral-card h3 {
+  font-family: var(--font-display);
+  font-size: 24px;
+  color: var(--cream);
+  margin-bottom: 8px;
+  position: relative;
+  font-weight: 500;
+}
+
+.credits {
+  font-family: var(--font-display);
+  font-size: 56px;
+  font-weight: 400;
+  color: var(--gold);
+  line-height: 1;
+  margin: 18px 0 6px;
+  position: relative;
+}
+
+.credits .currency {
+  font-size: 24px;
+  vertical-align: top;
+  margin-right: 4px;
+  font-weight: 300;
+}
+
+.credits-label {
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  color: var(--cream-soft);
+  text-transform: uppercase;
+  margin-bottom: 22px;
+  position: relative;
+  font-weight: 600;
+}
+
+.referral-card p {
+  font-size: 12px;
+  color: var(--cream-soft);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.referral-card p strong {
+  color: var(--gold);
+}
+
+/* =====================
+   BOTTOM NAV
+   ===================== */
+.bottom-nav {
+  position: fixed;
+  bottom: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: var(--container);
+  background: var(--cream-warm);
+  border-top: 1px solid var(--line);
+  display: none;
+  z-index: 100;
+  padding: 8px 16px 22px;
+  box-shadow: 0 -4px 20px rgba(45, 27, 78, 0.08);
+}
+
+.bottom-nav.active { display: flex; }
+
+.nav-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  gap: 4px;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 6px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font-family: var(--font-body);
+  color: var(--text-muted);
+  transition: color 0.25s ease;
+}
+
+.nav-item.active {
+  color: var(--purple-deep);
+}
+
+.nav-item.active .nav-item-icon {
+  background: var(--purple-deep);
+  color: var(--gold);
+}
+
+.nav-item-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--cream-soft);
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.nav-item-label {
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* =====================
+   WHATSAPP FLOAT
+   ===================== */
+.wa-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 54px;
+  height: 54px;
+  background: #25D366;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 90;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+  text-decoration: none;
+  border: none;
+  animation: pulse 2.5s ease infinite;
+}
+
+.bottom-nav.active ~ .wa-float {
+  bottom: 90px;
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4); }
+  50% { box-shadow: 0 6px 30px rgba(37, 211, 102, 0.7); }
+}
+
+.wa-float svg {
+  width: 28px;
+  height: 28px;
+}
+
+/* =====================
+   FOOTER
+   ===================== */
+.footer {
+  background: var(--purple-dark);
+  padding: 40px 24px 32px;
+  text-align: center;
+  color: var(--cream);
+}
+
+.footer-mark {
+  color: var(--gold);
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+.footer-name {
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: var(--cream);
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.footer-tag {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 13px;
+  color: var(--gold);
+  margin-bottom: 18px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+.footer-meta {
+  font-size: 9px;
+  letter-spacing: 0.25em;
+  color: var(--cream-soft);
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+/* =====================
+   MODAL
+   ===================== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(31, 19, 56, 0.85);
+  backdrop-filter: blur(8px);
+  z-index: 200;
+  display: none;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.modal-overlay.show {
+  display: flex;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal {
+  width: 100%;
+  max-width: var(--container);
+  background: var(--cream-warm);
+  border-top: 3px solid var(--gold);
+  border-radius: 16px 16px 0 0;
+  max-height: 88vh;
+  overflow-y: auto;
+  animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+.modal-handle {
+  width: 40px;
+  height: 4px;
+  background: var(--line-strong);
+  border-radius: 2px;
+  margin: 12px auto 8px;
+}
+
+.modal-content {
+  padding: 16px 24px 32px;
+}
+
+.modal-overline {
+  font-size: 9px;
+  letter-spacing: 0.3em;
+  color: var(--gold-deep);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.modal-title {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--purple-deep);
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.modal-body {
+  color: var(--text-dark);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.modal-body h4 {
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: var(--gold-deep);
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.modal-body p {
+  margin-bottom: 12px;
+  color: var(--text-dark);
+}
+
+.modal-body ul {
+  margin: 12px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.modal-body ul li {
+  padding: 5px 0 5px 16px;
+  position: relative;
+  font-size: 13px;
+  color: var(--text-dark);
+}
+
+.modal-body ul li::before {
+  content: '✦';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  color: var(--gold);
+  font-size: 11px;
+}
+
+.modal-close {
+  position: sticky;
+  top: 16px;
+  margin-left: auto;
+  margin-right: 16px;
+  width: 32px;
+  height: 32px;
+  background: var(--cream-warm);
+  border: 1px solid var(--line-strong);
+  border-radius: 50%;
+  color: var(--purple-deep);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1;
+  font-weight: 300;
+}
+
+/* =====================
+   ADMIN PANEL
+   ===================== */
+.admin-section {
+  padding: 24px;
+  background: var(--cream-warm);
+}
+
+.admin-tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 20px;
+  background: var(--cream-soft);
+  padding: 4px;
+  border-radius: 30px;
+  overflow-x: auto;
+}
+
+.admin-tab {
+  flex-shrink: 0;
+  padding: 8px 14px;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-weight: 600;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.admin-tab.active {
+  background: var(--purple-deep);
+  color: var(--gold);
+}
+
+.admin-content {
+  display: none;
+}
+
+.admin-content.active {
+  display: block;
+}
+
+.admin-card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.admin-card-actions {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  gap: 6px;
+}
+
+.admin-icon-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--cream-soft);
+  border: none;
+  color: var(--purple-deep);
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-icon-btn.delete {
+  background: rgba(200, 60, 60, 0.1);
+  color: #B8424B;
+}
+
+.form-group {
+  margin-bottom: 14px;
+}
+
+.form-label {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.form-input, .form-textarea, .form-select {
+  width: 100%;
+  background: var(--cream-warm);
+  border: 1px solid var(--line-strong);
+  color: var(--purple-deep);
+  padding: 10px 12px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  border-radius: var(--radius);
+}
+
+.form-input:focus, .form-textarea:focus, .form-select:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+
+.form-textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.admin-summary {
+  background: var(--purple-deep);
+  color: var(--cream);
+  padding: 18px;
+  border-radius: var(--radius-lg);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.admin-summary h3 {
+  font-family: var(--font-display);
+  font-size: 22px;
+  margin-bottom: 4px;
+  color: var(--gold);
+}
+
+.admin-summary p {
+  font-size: 12px;
+  color: var(--cream-soft);
+}
+
+/* =====================
+   PHASES TIMELINE (NEW v3)
+   ===================== */
+.phases-section {
+  background: var(--purple-deep);
+  padding: 40px 24px;
+  color: var(--cream);
+  position: relative;
+  overflow: hidden;
+}
+
+.phases-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at top, rgba(200, 165, 123, 0.08) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.phases-section .section-title {
+  color: var(--cream);
+}
+
+.phases-section .section-title em {
+  color: var(--gold);
+}
+
+.phases-section .section-overline {
+  color: var(--gold);
+}
+
+.phases-section .section-sub {
+  color: var(--cream-soft);
+}
+
+.phases-timeline {
+  position: relative;
+  padding-left: 32px;
+  margin-top: 28px;
+}
+
+.phases-timeline::before {
+  content: '';
+  position: absolute;
+  left: 11px;
+  top: 12px;
+  bottom: 12px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--gold), var(--gold-deep));
+  border-radius: 2px;
+}
+
+.phase-item {
+  position: relative;
+  margin-bottom: 24px;
+  padding-bottom: 4px;
+}
+
+.phase-item:last-child {
+  margin-bottom: 0;
+}
+
+.phase-marker {
+  position: absolute;
+  left: -32px;
+  top: 8px;
+  width: 24px;
+  height: 24px;
+  background: var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--purple-deep);
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  font-style: italic;
+  box-shadow: 0 0 0 4px var(--purple-deep);
+}
+
+.phase-card {
+  background: rgba(200, 165, 123, 0.08);
+  border: 1px solid rgba(200, 165, 123, 0.25);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  position: relative;
+}
+
+.phase-days {
+  font-size: 10px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.phase-title {
+  font-family: var(--font-display);
+  font-size: 22px;
+  color: var(--cream);
+  margin-bottom: 10px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.phase-description {
+  font-size: 13px;
+  color: var(--cream-soft);
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.phase-tech-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 12px;
+}
+
+.phase-tech-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 0;
+  font-size: 13px;
+  color: var(--cream);
+  border-bottom: 1px solid rgba(200, 165, 123, 0.1);
+}
+
+.phase-tech-list li:last-child {
+  border-bottom: none;
+}
+
+.phase-tech-list li .tech-icon {
+  width: 26px;
+  height: 26px;
+  background: var(--gold);
+  color: var(--purple-deep);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.phase-tech-list li strong {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.phase-note {
+  margin-top: 14px;
+  padding: 10px 12px;
+  background: rgba(200, 165, 123, 0.06);
+  border-left: 2px solid var(--gold);
+  border-radius: 4px;
+  font-size: 12px;
+  color: var(--cream-soft);
+  font-style: italic;
+  font-family: var(--font-display);
+  line-height: 1.5;
+}
+
+/* Extra services badge */
+.extra-services {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.extra-service {
+  background: var(--cream-warm);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--gold);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.extra-service-icon {
+  width: 40px;
+  height: 40px;
+  background: var(--purple-glow);
+  color: var(--gold-deep);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.extra-service-content h4 {
+  font-family: var(--font-display);
+  font-size: 17px;
+  color: var(--purple-deep);
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.extra-service-content p {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.extra-service-cta {
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  font-weight: 600;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: var(--font-body);
+}
+
+/* Utility */
+.divider-ornate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--gold);
+  margin: 8px 0;
+  padding: 20px;
+}
+
+.divider-ornate .line {
+  height: 1px;
+  width: 60px;
+  background: linear-gradient(90deg, transparent, var(--gold));
+}
+
+.divider-ornate .line.right {
+  background: linear-gradient(90deg, var(--gold), transparent);
+}
+
+.divider-ornate .diamond {
+  font-size: 12px;
+  color: var(--gold);
+}
+
+.text-center { text-align: center; }
+.mt-16 { margin-top: 16px; }
+.mt-24 { margin-top: 24px; }
+</style>
+</head>
+<body>
+
+<div class="app">
+
+  <!-- ============== TOPBAR ============== -->
+  <div class="topbar">
+    <div class="brand">
+      <div class="brand-logo">VL</div>
+      <div class="brand-text">
+        <span class="brand-name">Luxe Imperial</span>
+        <span class="brand-sub">Recovery · NYC</span>
+      </div>
+    </div>
+    <span class="mode-badge" id="modeBadge">Visitante</span>
+  </div>
+
+  <!-- ============== SCREEN: VISITOR ============== -->
+  <div class="screen active" id="screen-visitor">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-badge">Servicio móvil privado en New York</div>
+      <h1 class="hero-title">Recupérate con lujo,<br>privacidad y atención<br>especializada</h1>
+      <div class="hero-subtitle">en la comodidad de tu suite o residencia</div>
+      <p class="hero-tagline">Especialistas dedicados en recuperación post-operatoria en Nueva York. Drenaje linfático, terapias IV y cuidados ultra-personalizados para preservar tu intimidad.</p>
+      <div class="hero-ctas">
+        <button class="btn btn-primary" onclick="contactWhatsApp('Hola, quiero reservar una sesión en VL Luxe Imperial')">Reservar Ahora</button>
+        <button class="btn btn-secondary" onclick="scrollToSection('services')">Ver Servicios</button>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section section-cream" id="services">
+      <div class="section-head text-center">
+        <div class="section-overline">Nuestros Servicios</div>
+        <h2 class="section-title">Atención <em>especializada</em></h2>
+        <p class="section-sub">Servicios principales y complementarios. Atención de lujo y confort absoluto, directamente en tu suite o residencia.</p>
+      </div>
+
+      <div class="services-grid" id="servicesGrid">
+        <!-- Rendered dynamically -->
+      </div>
+    </section>
+
+    <!-- DIVIDER -->
+    <div class="divider-ornate">
+      <span class="line"></span>
+      <span class="diamond">✦</span>
+      <span class="line right"></span>
+    </div>
+
+    <!-- PACKAGES -->
+    <section class="section">
+      <div class="section-head text-center">
+        <div class="section-overline">Paquetes de Recuperación</div>
+        <h2 class="section-title">Programas de <em>élite</em></h2>
+        <p class="section-sub">Diseñados para potenciar tus resultados en cada etapa de recuperación.</p>
+      </div>
+
+      <div class="packages" id="packagesGrid">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <p class="text-center mt-24" style="font-size:11px; color:var(--text-muted); font-style:italic; font-family:var(--font-display);">
+        ✦ Surcharge por zona aplicable según ubicación · Consulta personalizada
+      </p>
+    </section>
+
+    <!-- PHASES OF RECOVERY (NEW v3) -->
+    <section class="phases-section">
+      <div class="section-head text-center">
+        <div class="section-overline">Protocolo Imperial</div>
+        <h2 class="section-title">Tu recuperación<br>por <em>fases</em></h2>
+        <p class="section-sub" style="max-width:380px;margin-left:auto;margin-right:auto;">Cada cuerpo tiene su tiempo. Respetamos los protocolos médicos y aplicamos la técnica correcta en el momento correcto.</p>
+      </div>
+
+      <div class="phases-timeline">
+        <!-- FASE 1 -->
+        <div class="phase-item">
+          <div class="phase-marker">i</div>
+          <div class="phase-card">
+            <div class="phase-days">Días 1 - 15 · Fase Aguda</div>
+            <div class="phase-title">Drenaje Manual Especializado</div>
+            <div class="phase-description">En las primeras semanas tu cuerpo está en su fase más vulnerable. Aplicamos exclusivamente técnica manual delicada, respetando los tejidos en cicatrización.</div>
+            <ul class="phase-tech-list">
+              <li>
+                <span class="tech-icon">∽</span>
+                <span><strong>Drenaje linfático</strong> manual técnica especializada</span>
+              </li>
+              <li>
+                <span class="tech-icon">◊</span>
+                <span><strong>Movilización suave</strong> respetando suturas</span>
+              </li>
+              <li>
+                <span class="tech-icon">✦</span>
+                <span><strong>Atención personalizada</strong> según tu cirugía</span>
+              </li>
+            </ul>
+            <div class="phase-note">✦ Sin aparatología — protocolo médico que respetamos por tu seguridad.</div>
+          </div>
+        </div>
+
+        <!-- FASE 2 -->
+        <div class="phase-item">
+          <div class="phase-marker">ii</div>
+          <div class="phase-card">
+            <div class="phase-days">Días 15-20+ · Fase Avanzada</div>
+            <div class="phase-title">Tecnología + Drenaje</div>
+            <div class="phase-description">Cuando tu médico lo autoriza, integramos aparatología profesional grado clínico para potenciar resultados, prevenir fibrosis y acelerar tu recuperación final.</div>
+            <ul class="phase-tech-list">
+              <li>
+                <span class="tech-icon">⚡</span>
+                <span><strong>Radiofrecuencia (RF)</strong> · reafirmación de piel</span>
+              </li>
+              <li>
+                <span class="tech-icon">✦</span>
+                <span><strong>Fototerapia LED</strong> · acelera cicatrización</span>
+              </li>
+              <li>
+                <span class="tech-icon">〰</span>
+                <span><strong>Ultrasonido + Cavitación</strong> · rompe fibrosis</span>
+              </li>
+              <li>
+                <span class="tech-icon">⚛</span>
+                <span><strong>Electroestimulación</strong> · tonifica musculatura</span>
+              </li>
+              <li>
+                <span class="tech-icon">∽</span>
+                <span><strong>Drenaje manual</strong> continuado</span>
+              </li>
+            </ul>
+            <div class="phase-note">✦ Aplicación según indicación médica e individual.</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:32px;">
+        <button class="btn btn-primary" onclick="contactWhatsApp('Hola, quiero entender mejor el protocolo Imperial de fases')">Quiero saber más</button>
+      </div>
+    </section>
+
+    <!-- WHY VL LUXE -->
+    <section class="section section-purple-light">
+      <div class="section-head text-center">
+        <div class="section-overline">Por qué VL Luxe</div>
+        <h2 class="section-title">Su recuperación,<br>en sus <em>términos</em></h2>
+        <p class="section-sub" style="max-width:380px;margin-left:auto;margin-right:auto;">Valoramos la suma importancia de la confidencialidad, el confort absoluto y la atención especializada durante su recuperación quirúrgica.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">i</div>
+          <h3>Equipos de Grado Médico</h3>
+          <p>Aparatología de vanguardia que maximiza su recuperación posquirúrgica.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">ii</div>
+          <h3>Personal Dedicado y Certificado</h3>
+          <p>Cada especialista en VL Luxe cuenta con los más altos estándares y licencias de Nueva York.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">iii</div>
+          <h3>Atención Discreta y Personalizada</h3>
+          <p>Protegemos su privacidad en todo momento con un cuidado enfocado 100% en sus necesidades específicas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="reviews-section">
+      <div class="section-head text-center">
+        <div class="section-overline">Testimonios Reales</div>
+        <h2 class="section-title">Lo que dicen<br>nuestras <em>clientas</em></h2>
+      </div>
+
+      <div class="reviews-summary">
+        <div class="reviews-rating">
+          <span class="reviews-stars">★★★★★</span>
+          <span class="reviews-rating-num">5.0</span>
+        </div>
+        <div class="reviews-count">Basado en <strong id="reviewCount">7</strong> opiniones reales en Google</div>
+      </div>
+
+      <div class="reviews-list" id="reviewsList">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <a href="#" onclick="openGoogleReviews(); return false;" class="review-link">
+        Ver todas en Google →
+      </a>
+    </section>
+
+    <!-- CONTACT BAR -->
+    <section class="contact-bar">
+      <h3>¿Listo para priorizar<br>tu recuperación?</h3>
+      <p>Nuestro equipo se desplaza de forma discreta por todo Nueva York, brindando el más alto estándar en recuperación post-operatoria.</p>
+      
+      <div class="contact-info">
+        <div class="contact-row">
+          <div class="icon">✆</div>
+          <div>
+            <span class="label">Teléfono</span>
+            <span class="value">(646) 512-6707</span>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="icon">✉</div>
+          <div>
+            <span class="label">Email</span>
+            <span class="value">vlluxeimperialgroup@gmail.com</span>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="icon">⌖</div>
+          <div>
+            <span class="label">Cobertura</span>
+            <span class="value">Todo Nueva York · NJ · Afueras NYC</span>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="icon">⏱</div>
+          <div>
+            <span class="label">Horario</span>
+            <span class="value">Lunes a Domingo · 8AM - 8PM</span>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn-primary" onclick="contactWhatsApp('Hola, quiero agendar una evaluación')">Agendar Evaluación</button>
+    </section>
+
+    <!-- ACCESS -->
+    <section class="access-section">
+      <div class="access-card">
+        <div class="ornament">✦</div>
+        <h4>¿Ya eres clienta Imperial?</h4>
+        <p>Ingresa tu código de acceso para ver tu panel personalizado de recuperación.</p>
+        <input type="text" class="access-input" id="accessInput" placeholder="Tu código" maxlength="20" />
+        <button class="btn btn-purple btn-block" onclick="tryAccess()">Acceder</button>
+        <p class="access-hint">Demo clienta: <strong>VLDEMO</strong></p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="footer-mark">✦</div>
+      <div class="footer-name">VL LUXE IMPERIAL RECOVERY</div>
+      <p class="footer-tag">"Recuperación post-quirúrgica premium · Tu bienestar es nuestra misión"</p>
+      <div class="footer-meta">© 2026 · Queens, NY</div>
+    </div>
+
+  </div>
+
+  <!-- ============== SCREEN: CLIENT DASHBOARD ============== -->
+  <div class="screen" id="screen-client">
+
+    <!-- TAB: HOME -->
+    <div class="client-tab active" id="tab-home">
+      <div class="dash-greeting">
+        <div class="ornament">✦</div>
+        <div class="dash-hello">Bienvenida</div>
+        <h1 class="dash-name" id="clientName">María</h1>
+        <div class="dash-day" id="clientDay">Día 12 post-operatorio</div>
+      </div>
+
+      <div class="progress-section">
+        <div class="progress-label">
+          <span class="progress-label-text">Progreso de Recuperación</span>
+          <span class="progress-percent" id="progressPercent">40%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill" style="width: 40%"></div>
+        </div>
+        <div class="progress-meta">
+          <span id="sessionsCompleted">4 de 10 sesiones</span>
+          <span id="nextSession">Próxima: Mañana</span>
+        </div>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-label">Tipo de Cirugía</div>
+          <div class="stat-value" id="surgeryType">Lipo 360</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Días Restantes</div>
+          <div class="stat-value" id="daysRemaining">48 <span class="small">días</span></div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Sesiones</div>
+          <div class="stat-value" id="sessionsCount">4 <span class="small">de 10</span></div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Próxima Cita</div>
+          <div class="stat-value" id="nextAppt">10:00 <span class="small">AM</span></div>
+        </div>
+      </div>
+
+      <div class="reminders-section">
+        <div class="section-head">
+          <div class="section-overline">Cuidados de Hoy</div>
+          <h2 class="section-title">Tu rutina <em>diaria</em></h2>
+        </div>
+        <div class="reminder" onclick="toggleReminder(this)">
+          <div class="reminder-check"></div>
+          <div class="reminder-text">Hidratación: 2 a 3 litros de agua hoy</div>
+        </div>
+        <div class="reminder" onclick="toggleReminder(this)">
+          <div class="reminder-check"></div>
+          <div class="reminder-text">Faja post-quirúrgica colocada correctamente</div>
+        </div>
+        <div class="reminder" onclick="toggleReminder(this)">
+          <div class="reminder-check"></div>
+          <div class="reminder-text">Caminata ligera de 10 a 15 minutos</div>
+        </div>
+        <div class="reminder" onclick="toggleReminder(this)">
+          <div class="reminder-check"></div>
+          <div class="reminder-text">Alimentación antiinflamatoria · proteína + verdes</div>
+        </div>
+        <div class="reminder" onclick="toggleReminder(this)">
+          <div class="reminder-check"></div>
+          <div class="reminder-text">Posición correcta para dormir</div>
+        </div>
+      </div>
+
+      <div class="alert-card">
+        <h4>◊ Señales que requieren atención inmediata</h4>
+        <p>Si presentas alguna de estas señales, contacta a tu cirujano y avísanos por WhatsApp.</p>
+        <ul class="alert-list">
+          <li>Fiebre superior a 100.4°F (38°C)</li>
+          <li>Enrojecimiento que se expande rápidamente</li>
+          <li>Secreción purulenta (verde o amarillo espeso)</li>
+          <li>Dolor intenso que no cede</li>
+          <li>Dureza extrema localizada</li>
+        </ul>
+        <button class="btn btn-purple btn-block" onclick="contactWhatsApp('Hola Vivi, necesito consulta urgente')">Contactar a Vivi · Urgente</button>
+      </div>
+    </div>
+
+    <!-- TAB: GUIDES -->
+    <div class="client-tab" id="tab-guides" style="display:none;">
+      <div class="dash-greeting">
+        <div class="ornament">✦</div>
+        <div class="dash-hello">Educación Imperial</div>
+        <h1 class="dash-name" style="font-size:28px;">Guías de Recuperación</h1>
+        <div class="dash-day">Conocimiento clínico esencial</div>
+      </div>
+
+      <div class="guides-list" style="padding-top:24px;">
+        <div class="guide-card" onclick="openModal('guia-lipo')">
+          <span class="guide-num">i</span>
+          <div class="guide-content">
+            <h4>Recuperación post-Lipo</h4>
+            <p>Protocolo · 8 semanas</p>
+          </div>
+          <span class="guide-arrow">→</span>
+        </div>
+        <div class="guide-card" onclick="openModal('guia-bbl')">
+          <span class="guide-num">ii</span>
+          <div class="guide-content">
+            <h4>Recuperación post-BBL</h4>
+            <p>Protocolo · cuidados especiales</p>
+          </div>
+          <span class="guide-arrow">→</span>
+        </div>
+        <div class="guide-card" onclick="openModal('guia-tummy')">
+          <span class="guide-num">iii</span>
+          <div class="guide-content">
+            <h4>Recuperación post-Tummy Tuck</h4>
+            <p>Protocolo · cicatrización óptima</p>
+          </div>
+          <span class="guide-arrow">→</span>
+        </div>
+        <div class="guide-card" onclick="openModal('guia-mama')">
+          <span class="guide-num">iv</span>
+          <div class="guide-content">
+            <h4>Recuperación post-Mamoplastia</h4>
+            <p>Protocolo · asentamiento óptimo</p>
+          </div>
+          <span class="guide-arrow">→</span>
+        </div>
+        <div class="guide-card" onclick="openModal('guia-alimentacion')">
+          <span class="guide-num">v</span>
+          <div class="guide-content">
+            <h4>Alimentación Antiinflamatoria</h4>
+            <p>Plan · acelera tu recuperación</p>
+          </div>
+          <span class="guide-arrow">→</span>
+        </div>
+        <div class="guide-card" onclick="openModal('guia-faja')">
+          <span class="guide-num">vi</span>
+          <div class="guide-content">
+            <h4>Cómo usar tu faja</h4>
+            <p>Guía visual · errores comunes</p>
+          </div>
+          <span class="guide-arrow">→</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB: REFERRAL -->
+    <div class="client-tab" id="tab-referral" style="display:none;">
+      <div class="dash-greeting">
+        <div class="ornament">✦</div>
+        <div class="dash-hello">Programa Imperial</div>
+        <h1 class="dash-name" style="font-size:28px;">Referral</h1>
+        <div class="dash-day">Comparte VL Luxe · gana créditos</div>
+      </div>
+
+      <div class="referral-card">
+        <h3>Tus Créditos Imperial</h3>
+        <div class="credits"><span class="currency">$</span>50</div>
+        <div class="credits-label">Crédito Acumulado</div>
+        <p>Por cada amiga que refieras a VL Luxe, ambas reciben:<br><strong>$50 para ti · 10% descuento para ella</strong></p>
+        <button class="btn btn-primary btn-block" onclick="shareReferral()">Compartir mi código</button>
+      </div>
+
+      <div class="section">
+        <div class="section-head text-center">
+          <div class="section-overline">Cómo Funciona</div>
+          <h2 class="section-title">Tres pasos <em>simples</em></h2>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">i</div>
+            <h3>Comparte tu código</h3>
+            <p>Envía tu código personal a amigas que vayan a operarse o estén en recuperación.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">ii</div>
+            <h3>Ella reserva con descuento</h3>
+            <p>Tu amiga obtiene 10% de descuento en su primer paquete al usar tu código.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">iii</div>
+            <h3>Acumula créditos</h3>
+            <p>Recibes $50 de crédito que puedes usar en sesiones futuras o servicios.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB: PROFILE -->
+    <div class="client-tab" id="tab-profile" style="display:none;">
+      <div class="dash-greeting">
+        <div class="ornament">✦</div>
+        <div class="dash-hello">Tu Perfil</div>
+        <h1 class="dash-name" style="font-size:28px;" id="profileName">María González</h1>
+        <div class="dash-day" id="profileSince">Cliente Imperial desde Abril 2026</div>
+      </div>
+
+      <div class="section">
+        <div class="admin-card" style="margin-bottom:14px;">
+          <div class="section-overline" style="margin-bottom:10px;">Información Clínica</div>
+          <h3 style="font-family:var(--font-display);font-size:20px;color:var(--purple-deep);margin-bottom:16px;font-weight:500;">Tu cirugía</h3>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+            <div>
+              <div style="font-size:9px;letter-spacing:0.22em;color:var(--gold-deep);text-transform:uppercase;margin-bottom:4px;font-weight:600;">Tipo</div>
+              <div style="color:var(--purple-deep);font-size:14px;font-weight:500;" id="profSurgery">Lipo 360</div>
+            </div>
+            <div>
+              <div style="font-size:9px;letter-spacing:0.22em;color:var(--gold-deep);text-transform:uppercase;margin-bottom:4px;font-weight:600;">Fecha</div>
+              <div style="color:var(--purple-deep);font-size:14px;font-weight:500;" id="profDate">18 Abril 2026</div>
+            </div>
+            <div>
+              <div style="font-size:9px;letter-spacing:0.22em;color:var(--gold-deep);text-transform:uppercase;margin-bottom:4px;font-weight:600;">Paquete</div>
+              <div style="color:var(--gold-deep);font-size:14px;font-family:var(--font-display);font-weight:600;" id="profPackage">Premium · 10 sesiones</div>
+            </div>
+            <div>
+              <div style="font-size:9px;letter-spacing:0.22em;color:var(--gold-deep);text-transform:uppercase;margin-bottom:4px;font-weight:600;">Especialista</div>
+              <div style="color:var(--purple-deep);font-size:14px;font-weight:500;">Viviana Pina</div>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn-purple btn-block" onclick="contactWhatsApp('Hola Vivi, necesito hablar contigo')" style="margin-bottom:10px;">Mensaje a Vivi</button>
+        <button class="btn btn-outline btn-block" onclick="logout()">Cerrar sesión</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ============== SCREEN: ADMIN PANEL ============== -->
+  <div class="screen" id="screen-admin">
+    <div class="dash-greeting" style="background:linear-gradient(135deg, var(--purple-medium), var(--purple-deep));">
+      <div class="ornament">⚙</div>
+      <div class="dash-hello">Panel Administrador</div>
+      <h1 class="dash-name" style="font-size:26px;">VL Luxe Admin</h1>
+      <div class="dash-day">Gestiona contenido sin código</div>
+    </div>
+
+    <div class="admin-section">
+      <div class="admin-summary" id="adminSummary">
+        <h3 id="totalClients">0</h3>
+        <p>Clientas registradas · Toca cualquier sección para gestionar</p>
+      </div>
+
+      <div class="admin-tabs">
+        <button class="admin-tab active" onclick="switchAdminTab('clients')">Clientas</button>
+        <button class="admin-tab" onclick="switchAdminTab('packages')">Paquetes</button>
+        <button class="admin-tab" onclick="switchAdminTab('services')">Servicios</button>
+        <button class="admin-tab" onclick="switchAdminTab('reviews')">Reviews</button>
+        <button class="admin-tab" onclick="switchAdminTab('settings')">Ajustes</button>
+      </div>
+
+      <!-- Clients -->
+      <div class="admin-content active" id="admin-clients">
+        <button class="btn btn-primary btn-block" onclick="addClient()" style="margin-bottom:16px;">+ Agregar Clienta</button>
+        <div id="clientsList"></div>
+      </div>
+
+      <!-- Packages -->
+      <div class="admin-content" id="admin-packages">
+        <button class="btn btn-primary btn-block" onclick="addPackage()" style="margin-bottom:16px;">+ Agregar Paquete</button>
+        <div id="packagesList"></div>
+      </div>
+
+      <!-- Services -->
+      <div class="admin-content" id="admin-services">
+        <button class="btn btn-primary btn-block" onclick="addService()" style="margin-bottom:16px;">+ Agregar Servicio</button>
+        <div id="servicesList"></div>
+      </div>
+
+      <!-- Reviews -->
+      <div class="admin-content" id="admin-reviews">
+        <button class="btn btn-primary btn-block" onclick="addReview()" style="margin-bottom:16px;">+ Agregar Review</button>
+        <div id="reviewsList_admin"></div>
+      </div>
+
+      <!-- Settings -->
+      <div class="admin-content" id="admin-settings">
+        <div class="admin-card">
+          <div class="form-group">
+            <label class="form-label">WhatsApp Number (sin + ni espacios)</label>
+            <input type="text" class="form-input" id="settingsWhatsapp" placeholder="16465126707" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Link Google Reviews</label>
+            <input type="text" class="form-input" id="settingsGoogle" placeholder="https://maps.app.goo.gl/..." />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Código Master Admin</label>
+            <input type="text" class="form-input" id="settingsAdminCode" placeholder="LEOIMPERIAL2026" />
+          </div>
+          <button class="btn btn-purple btn-block" onclick="saveSettings()">Guardar Ajustes</button>
+        </div>
+
+        <div class="admin-card mt-16">
+          <h4 style="font-family:var(--font-display);color:var(--purple-deep);margin-bottom:10px;font-size:18px;">Backup de Datos</h4>
+          <p style="font-size:12px;color:var(--text-muted);margin-bottom:14px;">Descarga todos tus datos para tener un respaldo seguro.</p>
+          <button class="btn btn-outline btn-block" onclick="exportData()" style="margin-bottom:10px;">⬇ Exportar Datos</button>
+          <button class="btn btn-outline btn-block" onclick="document.getElementById('importFile').click()">⬆ Importar Datos</button>
+          <input type="file" id="importFile" accept=".json" style="display:none;" onchange="importData(event)" />
+        </div>
+
+        <div class="admin-card mt-16">
+          <button class="btn btn-outline btn-block" onclick="logout()">Salir del Panel Admin</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- BOTTOM NAV (clienta only) -->
+<nav class="bottom-nav" id="bottomNav">
+  <div class="nav-grid">
+    <button class="nav-item active" data-tab="home" onclick="switchTab('home')">
+      <span class="nav-item-icon">⌂</span>
+      <span class="nav-item-label">Hoy</span>
+    </button>
+    <button class="nav-item" data-tab="guides" onclick="switchTab('guides')">
+      <span class="nav-item-icon">∴</span>
+      <span class="nav-item-label">Guías</span>
+    </button>
+    <button class="nav-item" data-tab="referral" onclick="switchTab('referral')">
+      <span class="nav-item-icon">✦</span>
+      <span class="nav-item-label">Referral</span>
+    </button>
+    <button class="nav-item" data-tab="profile" onclick="switchTab('profile')">
+      <span class="nav-item-icon">○</span>
+      <span class="nav-item-label">Perfil</span>
+    </button>
+  </div>
+</nav>
+
+<!-- WhatsApp Float -->
+<a href="#" class="wa-float" onclick="contactWhatsApp('Hola, vengo de la app VL Luxe Imperial'); return false;">
+  <svg viewBox="0 0 24 24" fill="currentColor">
+    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/>
+  </svg>
+</a>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal" onclick="if(event.target===this)closeModal()">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">×</button>
+    <div class="modal-handle"></div>
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+</div>
+
+<script>
+/* =====================================
+   APP STATE & DATA
+   ===================================== */
+const STORAGE_KEY = 'vlluxe_state_v2';
+
+const defaultState = {
+  mode: 'visitor',
+  whatsapp: '16465126707',
+  googleReviewsLink: 'https://maps.app.goo.gl/',
+  adminCode: 'LEOIMPERIAL2026',
+  
+  services: [
+    {
+      id: 's1',
+      title: 'Drenaje Linfático Post-operatorio',
+      description: 'Técnica manual especializada para acelerar tu recuperación, reducir inflamación y prevenir fibrosis. Aparatología profesional integrada según protocolo médico.',
+      icon: 'i'
+    },
+    {
+      id: 's2',
+      title: 'Terapia de Infusión IV',
+      description: 'Recupera tu energía, fortalece tu sistema inmunológico y acelera la cicatrización con hidratación intravenosa a medida.',
+      icon: 'ii'
+    },
+    {
+      id: 's3',
+      title: 'Contorno Corporal y RF',
+      description: 'Tonifica tu piel, reduce flacidez y potencia tu figura de forma no invasiva con Radiofrecuencia de grado médico.',
+      icon: 'iii'
+    },
+    {
+      id: 's4',
+      title: 'Transporte Post-Hospitalario',
+      description: 'Recogida segura desde hospital o clínica y traslado profesional hasta tu domicilio. Servicio cómodo y discreto.',
+      icon: 'iv'
+    },
+    {
+      id: 's5',
+      title: 'Acompañamiento Nocturno',
+      description: 'Las primeras 24 a 72 horas son críticas. Cuidado especializado continuo con monitoreo profesional y atención personalizada.',
+      icon: 'v'
+    }
+  ],
+  
+  packages: [
+    { id: 'p1', name: 'Sesión Individual', sessions: 1, price: 80, description: 'Ideal para conocer nuestro servicio o sesión de mantenimiento.', featured: false, badge: '' },
+    { id: 'p2', name: 'Plan Básico', sessions: 3, price: 260, description: 'Inicia la desinflamación y reduce las molestias inmediatas.', featured: false, badge: '' },
+    { id: 'p3', name: 'Plan Recovery', sessions: 5, price: 400, description: 'El equilibrio perfecto para una recuperación progresiva y óptima.', featured: true, badge: 'Más Popular' },
+    { id: 'p4', name: 'Plan Bonus', sessions: 8, price: 560, description: 'Cobertura ampliada con el mejor precio por sesión. Ahorras significativamente.', featured: false, value: true, badge: 'Mejor Valor' },
+    { id: 'p5', name: 'Plan Premium', sessions: 10, price: 750, description: 'La cobertura total para garantizar los mejores resultados estéticos finales.', featured: false, badge: '' }
+  ],
+  
+  reviews: [
+    {
+      id: 'r1',
+      name: 'Sisa Guaman',
+      stars: 5,
+      date: '2 semanas atrás',
+      quote: 'Yo me operé hace 3 meses y en mi momento más vulnerable la conocí, ella me ayudó mucho con los masajes (drenajes linfáticos). Es una persona muy profesional, muy acogedora y demasiado amable. Estaba en otro lugar donde no me sacaban todo el líquido durante los drenajes, entonces la conocí a ella y ella me los sacaba todo y te deja el cuerpo hermoso y relajado. Unas manos super suaves, te lo realiza con delicadeza, te tiene mucha paciencia, te trata super bien. 100% recomendada.'
+    },
+    {
+      id: 'r2',
+      name: 'Yessica Querales',
+      stars: 5,
+      date: '2 semanas atrás',
+      quote: 'Hoy quiero expresar mi gratitud por mis masajes postoperatorios. Han sido una parte esencial de mi recuperación, ayudándome a sanar con cuidado, dedicación y mucho cariño. Agradecida por cada atención recibida en este proceso tan importante para mí. Recomendación al 1000.'
+    },
+    {
+      id: 'r3',
+      name: 'Hazel Gissel Lopez',
+      stars: 5,
+      date: '3 días',
+      quote: 'Excelente servicio. Desde el primer momento me hicieron sentir en confianza. Fueron muy profesionales con el cuidado de mi cuerpo y eso ayudó muchísimo a mi recuperación. La atención fue increíble, definitivamente lo recomiendo al 100%.'
+    },
+    {
+      id: 'r4',
+      name: 'Gaby Paguay',
+      stars: 5,
+      date: '3 semanas atrás',
+      quote: 'Después de mi cirugía estética la conocí, ella tiene sus manos milagrosas, profesional y con todos los conocimientos en su área de trabajo da los mejores masajes. Excelente persona confiable, la recomiendo al 100%.'
+    },
+    {
+      id: 'r5',
+      name: 'Estefani Polio',
+      stars: 5,
+      date: '2 semanas atrás',
+      quote: 'Excelente servicio, los mejores masajes y sobre todo los menos dolorosos.'
+    }
+  ],
+  
+  clients: [
+    {
+      id: 'c1',
+      code: 'VLDEMO',
+      name: 'María González',
+      firstName: 'María',
+      surgery: 'Lipo 360',
+      surgeryDate: '2026-04-18',
+      packageName: 'Plan Premium · 10 sesiones',
+      totalSessions: 10,
+      completedSessions: 4,
+      credits: 50,
+      reminders: [false, false, false, false, false]
+    }
+  ],
+  
+  currentClient: null
+};
+
+let state = JSON.parse(JSON.stringify(defaultState));
+
+function loadState() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null');
+    if (saved) {
+      state = { ...defaultState, ...saved };
+      // Ensure arrays exist
+      state.services = state.services || defaultState.services;
+      state.packages = state.packages || defaultState.packages;
+      state.reviews = state.reviews || defaultState.reviews;
+      state.clients = state.clients || defaultState.clients;
+    }
+  } catch(e) {
+    console.error('Load error:', e);
+  }
+}
+
+function saveState() {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  } catch(e) {
+    console.error('Save error:', e);
+  }
+}
+
+/* =====================================
+   RENDER FUNCTIONS
+   ===================================== */
+function renderServices() {
+  const grid = document.getElementById('servicesGrid');
+  if (!grid) return;
+  grid.innerHTML = state.services.map(s => {
+    const isExtra = s.id === 's4' || s.id === 's5';
+    const ctaText = isExtra ? 'Consultar' : 'Reservar';
+    const messagePrefix = isExtra ? 'Hola, quiero información sobre' : 'Hola, quiero reservar';
+    return `
+    <div class="service-card" onclick="contactWhatsApp('${messagePrefix}: ${s.title.replace(/'/g,'&apos;')}')">
+      <div class="service-icon">${s.icon}</div>
+      <h3>${s.title}</h3>
+      <p>${s.description}</p>
+      <button class="btn btn-purple" onclick="event.stopPropagation(); contactWhatsApp('${messagePrefix}: ${s.title.replace(/'/g,'&apos;')}')">${ctaText}</button>
+    </div>
+  `;
+  }).join('');
+}
+
+function renderPackages() {
+  const grid = document.getElementById('packagesGrid');
+  if (!grid) return;
+  grid.innerHTML = state.packages.map(p => {
+    const perSession = (p.price / p.sessions).toFixed(0);
+    let cls = 'package';
+    if (p.featured) cls += ' featured';
+    if (p.value) cls += ' value';
+    return `
+      <div class="${cls}">
+        ${p.badge ? `<div class="package-badge">${p.badge}</div>` : ''}
+        <div class="package-name">${p.name}</div>
+        <div class="package-sessions">${p.sessions} ${p.sessions === 1 ? 'Sesión' : 'Sesiones'}</div>
+        <div class="package-price"><span class="currency">$</span>${p.price}</div>
+        <div class="package-per-session">${p.sessions > 1 ? `$${perSession} por sesión` : 'Precio único'}</div>
+        <div class="package-description">${p.description}</div>
+        <button class="btn ${p.featured || p.value ? 'btn-primary' : 'btn-purple'} btn-block" onclick="contactWhatsApp('Hola, me interesa el ${p.name.replace(/'/g,'&apos;')} de ${p.sessions} ${p.sessions === 1 ? 'sesión' : 'sesiones'} ($${p.price})')">Seleccionar</button>
+      </div>
+    `;
+  }).join('');
+}
+
+function renderReviews() {
+  const list = document.getElementById('reviewsList');
+  if (!list) return;
+  document.getElementById('reviewCount').textContent = state.reviews.length;
+  list.innerHTML = state.reviews.map(r => {
+    const initial = r.name.charAt(0).toUpperCase();
+    const stars = '★'.repeat(r.stars) + '☆'.repeat(5 - r.stars);
+    return `
+      <div class="review-card">
+        <div class="review-quote-mark">"</div>
+        <div class="review-header">
+          <div class="review-avatar">${initial}</div>
+          <div class="review-meta-block">
+            <div class="review-name">${r.name}</div>
+            <div class="review-stars-row">
+              <span class="review-stars">${stars}</span>
+              <span class="review-date">· ${r.date}</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-quote">${r.quote}</div>
+      </div>
+    `;
+  }).join('');
+}
+
+function renderAll() {
+  renderServices();
+  renderPackages();
+  renderReviews();
+}
+
+/* =====================================
+   ACTIONS
+   ===================================== */
+function contactWhatsApp(message) {
+  const num = state.whatsapp;
+  const text = encodeURIComponent(message || 'Hola, vengo de la app VL Luxe Imperial');
+  window.open(`https://wa.me/${num}?text=${text}`, '_blank');
+}
+
+function openGoogleReviews() {
+  const link = state.googleReviewsLink;
+  if (link && link !== 'https://maps.app.goo.gl/') {
+    window.open(link, '_blank');
+  } else {
+    alert('Próximamente: link directo a Google Reviews. Configúralo en Admin > Ajustes.');
+  }
+}
+
+function scrollToSection(id) {
+  document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function tryAccess() {
+  const code = document.getElementById('accessInput').value.trim().toUpperCase();
+  if (!code) return;
+  
+  // Check admin code
+  if (code === state.adminCode.toUpperCase()) {
+    enterAdminMode();
+    return;
+  }
+  
+  // Check client code
+  const client = state.clients.find(c => c.code.toUpperCase() === code);
+  if (client) {
+    state.currentClient = client.id;
+    saveState();
+    enterClientMode(client);
+    return;
+  }
+  
+  alert('Código no reconocido. Verifica con VL Luxe.');
+}
+
+function enterClientMode(client) {
+  state.mode = 'client';
+  saveState();
+  renderClient(client);
+  document.getElementById('screen-visitor').classList.remove('active');
+  document.getElementById('screen-admin').classList.remove('active');
+  document.getElementById('screen-client').classList.add('active');
+  document.getElementById('modeBadge').textContent = 'Imperial';
+  document.getElementById('bottomNav').classList.add('active');
+  window.scrollTo(0,0);
+}
+
+function enterAdminMode() {
+  state.mode = 'admin';
+  saveState();
+  document.getElementById('screen-visitor').classList.remove('active');
+  document.getElementById('screen-client').classList.remove('active');
+  document.getElementById('screen-admin').classList.add('active');
+  document.getElementById('modeBadge').textContent = 'Admin';
+  document.getElementById('bottomNav').classList.remove('active');
+  renderAdmin();
+  window.scrollTo(0,0);
+}
+
+function logout() {
+  state.mode = 'visitor';
+  state.currentClient = null;
+  saveState();
+  document.getElementById('screen-client').classList.remove('active');
+  document.getElementById('screen-admin').classList.remove('active');
+  document.getElementById('screen-visitor').classList.add('active');
+  document.getElementById('modeBadge').textContent = 'Visitante';
+  document.getElementById('bottomNav').classList.remove('active');
+  document.getElementById('accessInput').value = '';
+  window.scrollTo(0,0);
+}
+
+function switchTab(tab) {
+  document.querySelectorAll('.client-tab').forEach(t => t.style.display = 'none');
+  document.getElementById(`tab-${tab}`).style.display = 'block';
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  document.querySelector(`.nav-item[data-tab="${tab}"]`).classList.add('active');
+  window.scrollTo(0,0);
+}
+
+function toggleReminder(el) {
+  el.classList.toggle('done');
+  const reminders = document.querySelectorAll('#tab-home .reminder');
+  const current = state.clients.find(c => c.id === state.currentClient);
+  if (current) {
+    current.reminders = Array.from(reminders).map(r => r.classList.contains('done'));
+    saveState();
+  }
+}
+
+function shareReferral() {
+  const current = state.clients.find(c => c.id === state.currentClient);
+  if (!current) return;
+  const code = current.firstName.substring(0,3).toUpperCase() + '50';
+  const text = `Te recomiendo VL Luxe Imperial Recovery · recuperación post-quirúrgica premium en NYC. Usa mi código ${code} y obtén 10% de descuento en tu primer paquete. Tel: (646) 512-6707`;
+  if (navigator.share) {
+    navigator.share({ title: 'VL Luxe Imperial', text: text });
+  } else {
+    navigator.clipboard.writeText(text).then(() => {
+      alert('¡Mensaje copiado! Compártelo con tus amigas por WhatsApp.');
+    });
+  }
+}
+
+/* =====================================
+   CLIENT RENDER
+   ===================================== */
+function renderClient(client) {
+  if (!client) return;
+  document.getElementById('clientName').textContent = client.firstName;
+  document.getElementById('profileName').textContent = client.name;
+  document.getElementById('profSurgery').textContent = client.surgery;
+  document.getElementById('surgeryType').textContent = client.surgery;
+  document.getElementById('profPackage').textContent = client.packageName;
+  
+  const date = new Date(client.surgeryDate);
+  const today = new Date();
+  const days = Math.max(0, Math.floor((today - date) / (1000 * 60 * 60 * 24)));
+  document.getElementById('clientDay').textContent = `Día ${days} post-operatorio`;
+  
+  const remaining = Math.max(0, 60 - days);
+  document.getElementById('daysRemaining').innerHTML = `${remaining} <span class="small">días</span>`;
+  
+  const percent = Math.min(100, Math.round((client.completedSessions / client.totalSessions) * 100));
+  document.getElementById('progressPercent').textContent = `${percent}%`;
+  document.getElementById('progressFill').style.width = `${percent}%`;
+  document.getElementById('sessionsCompleted').textContent = `${client.completedSessions} de ${client.totalSessions} sesiones`;
+  document.getElementById('sessionsCount').innerHTML = `${client.completedSessions} <span class="small">de ${client.totalSessions}</span>`;
+  
+  // Format date
+  try {
+    const dt = new Date(client.surgeryDate);
+    const months = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+    document.getElementById('profDate').textContent = `${dt.getDate()} ${months[dt.getMonth()]} ${dt.getFullYear()}`;
+  } catch(e) {}
+  
+  // Restore reminders
+  const reminders = document.querySelectorAll('#tab-home .reminder');
+  reminders.forEach((r, i) => {
+    if (client.reminders && client.reminders[i]) r.classList.add('done');
+    else r.classList.remove('done');
+  });
+}
+
+/* =====================================
+   MODAL CONTENT
+   ===================================== */
+const modalContent = {
+  'guia-lipo': {
+    overline: 'Guía Clínica',
+    title: 'Recuperación post-Lipo',
+    body: `<p>Protocolo de recuperación de 8 semanas para liposucción y lipo 360.</p>
+      <h4>Semana 1 a 2 · fase aguda</h4>
+      <ul><li>Inicio del drenaje a las 48 a 72 horas</li><li>Sesiones diarias o cada 2 días</li><li>Faja post-quirúrgica permanente</li><li>Caminar ligeramente desde el día 2</li><li>Hidratación intensa · 2 a 3 litros diarios</li></ul>
+      <h4>Semana 3 a 4 · estabilización</h4>
+      <ul><li>Sesiones cada 2 días</li><li>Disminuye inflamación visible</li><li>Masaje más profundo en zonas operadas</li></ul>
+      <h4>Semana 5 a 8 · refinamiento</h4>
+      <ul><li>2 sesiones por semana, después 1</li><li>Trabajo de fibrosis residual</li><li>Resultado final visible alrededor de la semana 8</li></ul>
+      <h4>Total recomendado</h4><p>Entre 10 y 25 sesiones según tu cuerpo.</p>`
+  },
+  'guia-bbl': {
+    overline: 'Guía Clínica',
+    title: 'Recuperación post-BBL',
+    body: `<p>El BBL requiere cuidados especiales para proteger el injerto de grasa.</p>
+      <h4>Reglas de oro</h4>
+      <ul><li>No sentarse sobre las nalgas durante 2 a 6 semanas</li><li>Usar almohada tipo donut cuando sea inevitable</li><li>Dormir boca abajo o de lado · nunca boca arriba</li><li>No presión directa en glúteos las primeras 2 semanas</li></ul>
+      <h4>Drenaje específico</h4>
+      <p>Las primeras 2 semanas trabajamos solo en zonas donantes. A partir de la semana 3 incorporamos trabajo suave en glúteos.</p>
+      <h4>Tiempo total</h4><p>Entre 20 y 30 sesiones extendidas en 3 a 4 meses.</p>`
+  },
+  'guia-tummy': {
+    overline: 'Guía Clínica',
+    title: 'Recuperación post-Tummy Tuck',
+    body: `<p>La abdominoplastia tiene su propio protocolo por la sutura abdominal.</p>
+      <h4>Mientras tienes drenajes</h4>
+      <ul><li>Solo trabajo en zonas circundantes</li><li>Caminar encorvada para no tensar la sutura</li></ul>
+      <h4>Después de retirar drenajes</h4>
+      <ul><li>Drenaje completo lateral y superior</li><li>Apertura ganglionar inguinal y axilar</li><li>Sin presión directa sobre la cicatriz</li></ul>
+      <h4>A partir de los 21 días</h4>
+      <ul><li>Masaje específico de cicatriz</li><li>Productos como rosa mosqueta</li><li>Movimientos circulares suaves en abdomen</li></ul>`
+  },
+  'guia-mama': {
+    overline: 'Guía Clínica',
+    title: 'Recuperación post-Mamoplastia',
+    body: `<p>Los implantes mamarios requieren un protocolo de drenaje específico.</p>
+      <h4>Primera semana</h4>
+      <ul><li>Reposo máximo</li><li>Sostén post-quirúrgico permanente</li></ul>
+      <h4>A partir de los 5 a 7 días</h4>
+      <ul><li>Inicio del drenaje con técnica suave</li><li>Apertura axilar crucial</li><li>Drenaje supraclavicular</li></ul>
+      <h4>A partir de la semana 3</h4>
+      <ul><li>Movimientos alrededor del implante</li><li>Trabajo de tejidos superficiales</li></ul>`
+  },
+  'guia-alimentacion': {
+    overline: 'Guía Imperial',
+    title: 'Alimentación Antiinflamatoria',
+    body: `<p>Tu recuperación se acelera o se frena según lo que comes.</p>
+      <h4>Sí incluir</h4>
+      <ul><li>Proteína magra · pollo, pescado, huevos</li><li>Vegetales verdes · espinaca, brócoli, kale</li><li>Frutas con bromelina · piña fresca</li><li>Frutos rojos · arándanos, fresas</li><li>Grasas buenas · aguacate, aceite de oliva</li></ul>
+      <h4>Evitar completamente</h4>
+      <ul><li>Sal en exceso · retiene líquidos</li><li>Azúcar refinada · inflama</li><li>Procesados y comida rápida</li><li>Alcohol · interfiere con cicatrización</li></ul>
+      <h4>Hidratación</h4><p>2 a 3 litros de agua al día. La herramienta más poderosa.</p>`
+  },
+  'guia-faja': {
+    overline: 'Guía Práctica',
+    title: 'Cómo usar tu faja',
+    body: `<p>Una faja mal puesta puede causar fibrosis y afectar tu resultado.</p>
+      <h4>Reglas básicas</h4>
+      <ul><li>Uso casi continuo las primeras 6 semanas</li><li>Solo se quita para ducharse o sesiones</li><li>Debe ajustar firme pero sin cortar circulación</li></ul>
+      <h4>Errores comunes</h4>
+      <ul><li>Faja muy apretada que deja marcas profundas</li><li>Faja muy floja que no comprime</li><li>No usar la talla correcta según bajes inflamación</li></ul>
+      <h4>Cambios programados</h4><p>Generalmente se usan 2 o 3 fajas a lo largo del proceso.</p>`
+  }
+};
+
+function openModal(key) {
+  const data = modalContent[key];
+  if (!data) return;
+  document.getElementById('modalContent').innerHTML = `
+    <div class="modal-overline">${data.overline}</div>
+    <h2 class="modal-title">${data.title}</h2>
+    <div class="modal-body">${data.body}</div>
+    <div style="margin-top:24px;">
+      <button class="btn btn-purple btn-block" onclick="contactWhatsApp('Hola, tengo preguntas sobre: ${data.title}')">Consultar por WhatsApp</button>
+    </div>
+  `;
+  document.getElementById('modal').classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  document.getElementById('modal').classList.remove('show');
+  document.body.style.overflow = '';
+}
+
+/* =====================================
+   ADMIN PANEL
+   ===================================== */
+function renderAdmin() {
+  document.getElementById('totalClients').textContent = state.clients.length;
+  document.getElementById('settingsWhatsapp').value = state.whatsapp;
+  document.getElementById('settingsGoogle').value = state.googleReviewsLink;
+  document.getElementById('settingsAdminCode').value = state.adminCode;
+  renderAdminClients();
+  renderAdminPackages();
+  renderAdminServices();
+  renderAdminReviews();
+}
+
+function switchAdminTab(tab) {
+  document.querySelectorAll('.admin-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.admin-content').forEach(c => c.classList.remove('active'));
+  event.target.classList.add('active');
+  document.getElementById(`admin-${tab}`).classList.add('active');
+}
+
+// CLIENTS
+function renderAdminClients() {
+  const list = document.getElementById('clientsList');
+  list.innerHTML = state.clients.map(c => `
+    <div class="admin-card">
+      <div class="admin-card-actions">
+        <button class="admin-icon-btn" onclick="editClient('${c.id}')">✎</button>
+        <button class="admin-icon-btn delete" onclick="deleteClient('${c.id}')">×</button>
+      </div>
+      <div style="font-family:var(--font-display);font-size:18px;color:var(--purple-deep);margin-bottom:6px;font-weight:500;">${c.name}</div>
+      <div style="font-size:11px;color:var(--gold-deep);letter-spacing:0.15em;text-transform:uppercase;font-weight:600;margin-bottom:8px;">Código: ${c.code}</div>
+      <div style="font-size:13px;color:var(--text-muted);">${c.surgery} · ${c.packageName}</div>
+      <div style="font-size:12px;color:var(--text-muted);margin-top:4px;">Sesiones: ${c.completedSessions}/${c.totalSessions}</div>
+    </div>
+  `).join('') || '<p style="text-align:center;color:var(--text-muted);font-size:13px;padding:20px;">No hay clientas. Toca "+ Agregar Clienta".</p>';
+}
+
+function addClient() {
+  showClientForm(null);
+}
+
+function editClient(id) {
+  const client = state.clients.find(c => c.id === id);
+  if (client) showClientForm(client);
+}
+
+function deleteClient(id) {
+  if (!confirm('¿Eliminar esta clienta?')) return;
+  state.clients = state.clients.filter(c => c.id !== id);
+  saveState();
+  renderAdminClients();
+  document.getElementById('totalClients').textContent = state.clients.length;
+}
+
+function showClientForm(client) {
+  const isNew = !client;
+  const c = client || { id: 'c' + Date.now(), code: '', name: '', firstName: '', surgery: '', surgeryDate: new Date().toISOString().split('T')[0], packageName: '', totalSessions: 5, completedSessions: 0, credits: 0, reminders: [false,false,false,false,false] };
+  
+  document.getElementById('modalContent').innerHTML = `
+    <div class="modal-overline">Admin · Clientas</div>
+    <h2 class="modal-title">${isNew ? 'Nueva Clienta' : 'Editar Clienta'}</h2>
+    <div class="form-group">
+      <label class="form-label">Nombre Completo</label>
+      <input type="text" class="form-input" id="cf_name" value="${c.name}" placeholder="María González" />
+    </div>
+    <div class="form-group">
+      <label class="form-label">Primer Nombre (saludo)</label>
+      <input type="text" class="form-input" id="cf_firstName" value="${c.firstName}" placeholder="María" />
+    </div>
+    <div class="form-group">
+      <label class="form-label">Código de Acceso</label>
+      <input type="text" class="form-input" id="cf_code" value="${c.code}" placeholder="MARIA2026" />
+    </div>
+    <div class="form-group">
+      <label class="form-label">Tipo de Cirugía</label>
+      <input type="text" class="form-input" id="cf_surgery" value="${c.surgery}" placeholder="Lipo 360" />
+    </div>
+    <div class="form-group">
+      <label class="form-label">Fecha de Cirugía</label>
+      <input type="date" class="form-input" id="cf_surgeryDate" value="${c.surgeryDate}" />
+    </div>
+    <div class="form-group">
+      <label class="form-label">Paquete</label>
+      <input type="text" class="form-input" id="cf_packageName" value="${c.packageName}" placeholder="Plan Recovery · 5 sesiones" />
+    </div>
+    <div class="form-group">
+      <label class="form-label">Total Sesiones</label>
+      <input type="number" class="form-input" id="cf_totalSessions" value="${c.totalSessions}" min="1" />
+    </div>
+    <div class="form-group">
+      <label class="form-label">Sesiones Completadas</label>
+      <input type="number" class="form-input" id="cf_completedSessions" value="${c.completedSessions}" min="0" />
+    </div>
+    <div class="form-group">
+      <label class="form-label">Créditos Imperial Referral ($)</label>
+      <input type="number" class="form-input" id="cf_credits" value="${c.credits}" min="0" />
+    </div>
+    <button class="btn btn-primary btn-block" onclick="saveClient('${c.id}', ${isNew})">Guardar Clienta</button>
+    <button class="btn btn-outline btn-block" onclick="closeModal()" style="margin-top:8px;">Cancelar</button>
+  `;
+  document.getElementById('modal').classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+
+function saveClient(id, isNew) {
+  const data = {
+    id: id,
+    name: document.getElementById('cf_name').value.trim(),
+    firstName: document.getElementById('cf_firstName').value.trim(),
+    code: document.getElementById('cf_code').value.trim().toUpperCase(),
+    surgery: document.getElementById('cf_surgery').value.trim(),
+    surgeryDate: document.getElementById('cf_surgeryDate').value,
+    packageName: document.getElementById('cf_packageName').value.trim(),
+    totalSessions: parseInt(document.getElementById('cf_totalSessions').value) || 5,
+    completedSessions: parseInt(document.getElementById('cf_completedSessions').value) || 0,
+    credits: parseInt(document.getElementById('cf_credits').value) || 0,
+    reminders: [false,false,false,false,false]
+  };
+  
+  if (!data.name || !data.code) { alert('Nombre y Código son requeridos'); return; }
+  
+  if (isNew) {
+    state.clients.push(data);
+  } else {
+    const idx = state.clients.findIndex(c => c.id === id);
+    if (idx !== -1) state.clients[idx] = { ...state.clients[idx], ...data };
+  }
+  saveState();
+  renderAdminClients();
+  document.getElementById('totalClients').textContent = state.clients.length;
+  closeModal();
+}
+
+// PACKAGES
+function renderAdminPackages() {
+  const list = document.getElementById('packagesList');
+  list.innerHTML = state.packages.map(p => `
+    <div class="admin-card">
+      <div class="admin-card-actions">
+        <button class="admin-icon-btn" onclick="editPackage('${p.id}')">✎</button>
+        <button class="admin-icon-btn delete" onclick="deletePackage('${p.id}')">×</button>
+      </div>
+      <div style="font-family:var(--font-display);font-size:18px;color:var(--purple-deep);margin-bottom:4px;font-weight:500;">${p.name}</div>
+      <div style="font-size:13px;color:var(--gold-deep);font-weight:600;">$${p.price} · ${p.sessions} sesiones</div>
+      ${p.badge ? `<div style="font-size:10px;letter-spacing:0.15em;color:var(--gold-deep);margin-top:6px;text-transform:uppercase;">${p.badge}</div>` : ''}
+    </div>
+  `).join('');
+}
+
+function addPackage() { showPackageForm(null); }
+function editPackage(id) {
+  const p = state.packages.find(x => x.id === id);
+  if (p) showPackageForm(p);
+}
+function deletePackage(id) {
+  if (!confirm('¿Eliminar este paquete?')) return;
+  state.packages = state.packages.filter(p => p.id !== id);
+  saveState();
+  renderAdminPackages();
+}
+
+function showPackageForm(pkg) {
+  const isNew = !pkg;
+  const p = pkg || { id: 'p' + Date.now(), name: '', sessions: 1, price: 0, description: '', featured: false, value: false, badge: '' };
+  document.getElementById('modalContent').innerHTML = `
+    <div class="modal-overline">Admin · Paquetes</div>
+    <h2 class="modal-title">${isNew ? 'Nuevo Paquete' : 'Editar Paquete'}</h2>
+    <div class="form-group"><label class="form-label">Nombre</label><input type="text" class="form-input" id="pf_name" value="${p.name}" /></div>
+    <div class="form-group"><label class="form-label">Sesiones</label><input type="number" class="form-input" id="pf_sessions" value="${p.sessions}" min="1" /></div>
+    <div class="form-group"><label class="form-label">Precio ($)</label><input type="number" class="form-input" id="pf_price" value="${p.price}" min="0" /></div>
+    <div class="form-group"><label class="form-label">Descripción</label><textarea class="form-textarea" id="pf_description">${p.description}</textarea></div>
+    <div class="form-group"><label class="form-label">Badge (opcional)</label><input type="text" class="form-input" id="pf_badge" value="${p.badge || ''}" placeholder="Más Popular / Mejor Valor" /></div>
+    <div class="form-group"><label class="form-label">¿Destacado (morado)?</label><select class="form-select" id="pf_featured"><option value="false" ${!p.featured?'selected':''}>No</option><option value="true" ${p.featured?'selected':''}>Sí (Más Popular)</option></select></div>
+    <div class="form-group"><label class="form-label">¿Mejor Valor?</label><select class="form-select" id="pf_value"><option value="false" ${!p.value?'selected':''}>No</option><option value="true" ${p.value?'selected':''}>Sí</option></select></div>
+    <button class="btn btn-primary btn-block" onclick="savePackage('${p.id}', ${isNew})">Guardar</button>
+    <button class="btn btn-outline btn-block" onclick="closeModal()" style="margin-top:8px;">Cancelar</button>
+  `;
+  document.getElementById('modal').classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+
+function savePackage(id, isNew) {
+  const data = {
+    id: id,
+    name: document.getElementById('pf_name').value.trim(),
+    sessions: parseInt(document.getElementById('pf_sessions').value) || 1,
+    price: parseInt(document.getElementById('pf_price').value) || 0,
+    description: document.getElementById('pf_description').value.trim(),
+    badge: document.getElementById('pf_badge').value.trim(),
+    featured: document.getElementById('pf_featured').value === 'true',
+    value: document.getElementById('pf_value').value === 'true'
+  };
+  if (!data.name) { alert('Nombre requerido'); return; }
+  if (isNew) state.packages.push(data);
+  else {
+    const idx = state.packages.findIndex(p => p.id === id);
+    if (idx !== -1) state.packages[idx] = data;
+  }
+  saveState();
+  renderAdminPackages();
+  renderPackages();
+  closeModal();
+}
+
+// SERVICES
+function renderAdminServices() {
+  const list = document.getElementById('servicesList');
+  list.innerHTML = state.services.map(s => `
+    <div class="admin-card">
+      <div class="admin-card-actions">
+        <button class="admin-icon-btn" onclick="editService('${s.id}')">✎</button>
+        <button class="admin-icon-btn delete" onclick="deleteService('${s.id}')">×</button>
+      </div>
+      <div style="font-family:var(--font-display);font-size:18px;color:var(--purple-deep);margin-bottom:4px;font-weight:500;">${s.title}</div>
+      <div style="font-size:12px;color:var(--text-muted);">${s.description.substring(0, 80)}...</div>
+    </div>
+  `).join('');
+}
+
+function addService() { showServiceForm(null); }
+function editService(id) {
+  const s = state.services.find(x => x.id === id);
+  if (s) showServiceForm(s);
+}
+function deleteService(id) {
+  if (!confirm('¿Eliminar este servicio?')) return;
+  state.services = state.services.filter(s => s.id !== id);
+  saveState();
+  renderAdminServices();
+  renderServices();
+}
+
+function showServiceForm(svc) {
+  const isNew = !svc;
+  const s = svc || { id: 's' + Date.now(), title: '', description: '', icon: 'i' };
+  document.getElementById('modalContent').innerHTML = `
+    <div class="modal-overline">Admin · Servicios</div>
+    <h2 class="modal-title">${isNew ? 'Nuevo Servicio' : 'Editar Servicio'}</h2>
+    <div class="form-group"><label class="form-label">Título</label><input type="text" class="form-input" id="sf_title" value="${s.title}" /></div>
+    <div class="form-group"><label class="form-label">Descripción</label><textarea class="form-textarea" id="sf_description">${s.description}</textarea></div>
+    <div class="form-group"><label class="form-label">Ícono (i, ii, iii, iv...)</label><input type="text" class="form-input" id="sf_icon" value="${s.icon}" /></div>
+    <button class="btn btn-primary btn-block" onclick="saveService('${s.id}', ${isNew})">Guardar</button>
+    <button class="btn btn-outline btn-block" onclick="closeModal()" style="margin-top:8px;">Cancelar</button>
+  `;
+  document.getElementById('modal').classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+
+function saveService(id, isNew) {
+  const data = {
+    id: id,
+    title: document.getElementById('sf_title').value.trim(),
+    description: document.getElementById('sf_description').value.trim(),
+    icon: document.getElementById('sf_icon').value.trim() || 'i'
+  };
+  if (!data.title) { alert('Título requerido'); return; }
+  if (isNew) state.services.push(data);
+  else {
+    const idx = state.services.findIndex(s => s.id === id);
+    if (idx !== -1) state.services[idx] = data;
+  }
+  saveState();
+  renderAdminServices();
+  renderServices();
+  closeModal();
+}
+
+// REVIEWS
+function renderAdminReviews() {
+  const list = document.getElementById('reviewsList_admin');
+  list.innerHTML = state.reviews.map(r => `
+    <div class="admin-card">
+      <div class="admin-card-actions">
+        <button class="admin-icon-btn" onclick="editReview('${r.id}')">✎</button>
+        <button class="admin-icon-btn delete" onclick="deleteReview('${r.id}')">×</button>
+      </div>
+      <div style="font-family:var(--font-display);font-size:18px;color:var(--purple-deep);margin-bottom:4px;font-weight:500;">${r.name}</div>
+      <div style="font-size:13px;color:var(--gold);margin-bottom:6px;">${'★'.repeat(r.stars)} · ${r.date}</div>
+      <div style="font-size:12px;color:var(--text-muted);font-style:italic;">${r.quote.substring(0, 100)}...</div>
+    </div>
+  `).join('');
+}
+
+function addReview() { showReviewForm(null); }
+function editReview(id) {
+  const r = state.reviews.find(x => x.id === id);
+  if (r) showReviewForm(r);
+}
+function deleteReview(id) {
+  if (!confirm('¿Eliminar esta review?')) return;
+  state.reviews = state.reviews.filter(r => r.id !== id);
+  saveState();
+  renderAdminReviews();
+  renderReviews();
+}
+
+function showReviewForm(rev) {
+  const isNew = !rev;
+  const r = rev || { id: 'r' + Date.now(), name: '', stars: 5, date: 'Hoy', quote: '' };
+  document.getElementById('modalContent').innerHTML = `
+    <div class="modal-overline">Admin · Reviews</div>
+    <h2 class="modal-title">${isNew ? 'Nueva Review' : 'Editar Review'}</h2>
+    <div class="form-group"><label class="form-label">Nombre Cliente</label><input type="text" class="form-input" id="rf_name" value="${r.name}" /></div>
+    <div class="form-group"><label class="form-label">Estrellas (1-5)</label><input type="number" class="form-input" id="rf_stars" value="${r.stars}" min="1" max="5" /></div>
+    <div class="form-group"><label class="form-label">Fecha (texto)</label><input type="text" class="form-input" id="rf_date" value="${r.date}" placeholder="2 semanas atrás" /></div>
+    <div class="form-group"><label class="form-label">Quote / Testimonio</label><textarea class="form-textarea" id="rf_quote" style="min-height:120px;">${r.quote}</textarea></div>
+    <button class="btn btn-primary btn-block" onclick="saveReview('${r.id}', ${isNew})">Guardar</button>
+    <button class="btn btn-outline btn-block" onclick="closeModal()" style="margin-top:8px;">Cancelar</button>
+  `;
+  document.getElementById('modal').classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+
+function saveReview(id, isNew) {
+  const data = {
+    id: id,
+    name: document.getElementById('rf_name').value.trim(),
+    stars: parseInt(document.getElementById('rf_stars').value) || 5,
+    date: document.getElementById('rf_date').value.trim() || 'Reciente',
+    quote: document.getElementById('rf_quote').value.trim()
+  };
+  if (!data.name || !data.quote) { alert('Nombre y Quote requeridos'); return; }
+  if (isNew) state.reviews.unshift(data);
+  else {
+    const idx = state.reviews.findIndex(r => r.id === id);
+    if (idx !== -1) state.reviews[idx] = data;
+  }
+  saveState();
+  renderAdminReviews();
+  renderReviews();
+  closeModal();
+}
+
+// SETTINGS
+function saveSettings() {
+  state.whatsapp = document.getElementById('settingsWhatsapp').value.replace(/\D/g, '');
+  state.googleReviewsLink = document.getElementById('settingsGoogle').value.trim();
+  state.adminCode = document.getElementById('settingsAdminCode').value.trim() || 'LEOIMPERIAL2026';
+  saveState();
+  alert('✦ Ajustes guardados correctamente');
+}
+
+// EXPORT/IMPORT
+function exportData() {
+  const dataStr = JSON.stringify(state, null, 2);
+  const blob = new Blob([dataStr], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `vlluxe_backup_${new Date().toISOString().split('T')[0]}.json`;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+function importData(event) {
+  const file = event.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = (e) => {
+    try {
+      const imported = JSON.parse(e.target.result);
+      if (confirm('¿Reemplazar todos los datos actuales con el archivo importado?')) {
+        state = { ...defaultState, ...imported };
+        saveState();
+        renderAll();
+        renderAdmin();
+        alert('✦ Datos importados correctamente');
+      }
+    } catch(err) {
+      alert('Error: archivo inválido');
+    }
+  };
+  reader.readAsText(file);
+}
+
+/* =====================================
+   INIT
+   ===================================== */
+loadState();
+renderAll();
+
+if (state.mode === 'client' && state.currentClient) {
+  const client = state.clients.find(c => c.id === state.currentClient);
+  if (client) enterClientMode(client);
+} else if (state.mode === 'admin') {
+  enterAdminMode();
+}
+
+document.getElementById('accessInput').addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') tryAccess();
+});
+</script>
+
+</body>
+</html>
